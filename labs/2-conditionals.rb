@@ -12,6 +12,21 @@
 # that reads "YOU LOSE!", otherwise, write a message that
 # reads "THE POINT IS {number}"
 
+die1 = rand(1..6)
+die2 = rand(1..6)
+# puts "first die: #{die1}"
+# puts "second die: #{die2}"
+
+total = die1 + die2
+
+if total == 7 || total == 11
+    puts "YOU WIN!"
+elsif total == 2 || total == 3 || total == 12
+    puts "YOU LOSE!"
+else
+    puts "THE POINT IS #{total}"
+end 
+
 # HINTS
 # Get a random number between 1 and 6 by doing:
 # rand(1..6)
@@ -20,13 +35,14 @@
 # if dinner == "tacos" && dessert == "ice cream"
 
 # 1. set the first die and write it to the screen
-die1 = rand(1..6)
-puts die1
+# die1 = rand(1..6)
+# puts die1
 
 # 2. set the second die and write it to the screen
-die2 = rand(1..6)
-puts die2
+
+# die2 = rand(1..6)
+# puts die2
 
 # 3. create a variable for the total and write it to the screen
-total = die1 + die2
-puts "The total is: #{total}"
+# total = die1 + die2
+# puts "The total is: #{total}"
